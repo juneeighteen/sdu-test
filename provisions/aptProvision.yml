@@ -1,0 +1,25 @@
+- name: Ansible Plays that run apt get commands
+  hosts: localhost
+  tasks:
+  - name: update apt-get
+    apt: update_cache=yes
+  - name: apt-get install git
+    apt: name=git state=present
+  - name: apt-get install nano (text editor)
+    apt: name=nano state=present
+  - name: apt-get install gcc
+    apt: name=gcc state=present
+  - name: apt-get install wget
+    apt: name=wget state=present
+  - name: "aptget install libffi-dev"
+    apt: pkg=libffi-dev state=latest
+  - name: "apt-get install libxslt-dev"
+    apt: pkg=libxslt-dev state=present
+  - name: Install libxml2-dev using apt
+    apt: name=libxml2-dev state=present
+  - name: Install python-dev using apt
+    apt: name=python-dev state=present
+  - name: Install python-pip using apt
+    apt: name=python-pip state=present
+  - name: Install unzip using apt
+    apt: name=unzip state=present

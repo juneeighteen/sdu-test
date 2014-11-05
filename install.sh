@@ -44,4 +44,13 @@ cp /root/gitProvision.yml /root/sdu-test/provisions/gitProvision.yml
 /root/ansible/bin/ansible-playbook /root/sdu-test/provisions/pipProvision.yml -i /root/ansible_hosts
 /root/ansible/bin/ansible-playbook /root/sdu-test/provisions/gitProvision.yml -i /root/ansible_hosts
 
+
+mkdir -p /home/qatest/sdu-test-tempest/tools.cisco
+mkdir -p /home/qatest/sdu-test-tempest/etc/configs.cisco
+mkdir -p /home/qatest/sdu-test-tempets/etc/test-lists-nonadmin.baseline
+
+cp /home/qatest/sdu-test-tempest-unstable/tools.cisco/* /home/qatest/sdu-test-tempest/tools.cisco
+cp /home/qatest/sdu-test-tempest-unstable/etc/configs.cisco/* /home/qatest/sdu-test-tempest/etc/configs.cisco
+cp /home/qatest/sdu-test-tempest-unstable/etc/test-lists-nonadmin.baseline/* /home/qatest/sdu-test-tempest/etc"
+
 exit 0

@@ -53,4 +53,7 @@ cp /home/qatest/sdu-test-tempest-unstable/tools.cisco/* /home/qatest/sdu-test-te
 cp /home/qatest/sdu-test-tempest-unstable/etc/configs.cisco/* /home/qatest/sdu-test-tempest/etc/configs.cisco
 cp /home/qatest/sdu-test-tempest-unstable/etc/test-lists-nonadmin.baseline/* /home/qatest/sdu-test-tempest/etc"
 
+./prepareTempest.sh
+
 exit 0
+

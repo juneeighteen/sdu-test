@@ -1,0 +1,4 @@
+- name: Ansible Plays that install git repos
+  hosts: localhost
+  tasks:
+   - user: name=qatest comment="QA Test" uid=1040

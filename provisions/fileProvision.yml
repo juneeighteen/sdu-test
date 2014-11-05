@@ -1,0 +1,5 @@
+- name: Ansible Plays that run pip install commands
+  hosts: localhost
+  tasks:
+   - file: path=/var/log/tempest state=directory owner=qatest group=qatest
+   - file: path=/var/log/tempest/tempest.log state=touch owner=qatest group=qatest mode="u=rw,g=rw,o=rw"

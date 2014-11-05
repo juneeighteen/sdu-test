@@ -1,3 +1,5 @@
+chmod +x *.sh
+
 echo "bootstrap.sh called to install Ansible"
 echo "installing python-yaml"
 apt-get install python-yaml -y
